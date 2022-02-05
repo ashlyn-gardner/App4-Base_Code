@@ -65,11 +65,12 @@ blah, blah, blah, blah
 		healthy_count = healthy_count * 1/8;
 	}
 	
-	function Resultspercentage(){ <!--Added this command to display the results breakdown by percentage--> 
+	function Resultsprobability(){ <!--Added this command to display the results breakdown--> 
 		var resultText = document.getElementById("results");
 		var depressionpercent= (depression_count)
 		var anxiety= (anxiety_count)
-		resultText.innerHTML = "Probability it is depression =" + depressionpercent + "<br> Probability it is anxiety =" + anxietypercent;
+		var healthy= (healthy_count)
+		resultText.innerHTML = "Probability it is depression =" + depressionpercent + "<br> Probability it is anxiety =" + anxietypercent + "<br> Probability it is healthy = " + healthypercent;
 		
 	}
 
