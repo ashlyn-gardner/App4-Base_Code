@@ -44,14 +44,15 @@ blah, blah, blah, blah
 
         function depressionAdd(){
             depression_count = depression_count + 1;
+		
         }
 
 	function anxietyFinal(){ 
-		anxiety_count = anxiety_count * 1/6; 
-		depression_count = depression_count * 1/6;
+		anxiety_count = anxiety_count * 1/8; 
+		depression_count = depression_count * 1/8;
 	}
 	
-	function Resultspercentage(){
+	function Resultspercentage(){ <!--Added this command to display the results breakdown--> 
 		var resultText = document.getElementById("results");
 		var depressionpercent= (depression_count)
 		var anxietypercent= (anxiety_count)
@@ -224,5 +225,5 @@ blah, blah, blah, blah
 	<p>DIY!</p>
 </footer>
 	   
-   </body>
+</body>
 </html>
