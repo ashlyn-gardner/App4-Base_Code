@@ -35,7 +35,6 @@ blah, blah, blah, blah
 <script>
         var anxiety_count = 0;
         var depression_count = 0;
-	var healthy_count = 0;
 
 	
         function anxietyAdd(){
@@ -45,10 +44,6 @@ blah, blah, blah, blah
 
         function depressionAdd(){
             depression_count = depression_count + 1;
-        }
-	
-	function healthyAdd(){
-		healthy_count = healthy_count + 1;
 		
 	}
 	
@@ -62,16 +57,11 @@ blah, blah, blah, blah
 		
 	}
 	
-	function healthyFinal(){ <!--Added this command to calculate the results-->
-		healthy_count = healthy_count * 1/8;
-	}
-	
 	function Resultsprobability(){ <!--Added this command to display the results breakdown--> 
 		var resultText = document.getElementById("results");
 		var depressionpercent= (depression_count)
 		var anxiety= (anxiety_count)
-		var healthy= (healthy_count)
-		resultText.innerHTML = "Probability it is depression =" + depressionpercent + "<br> Probability it is anxiety =" + anxietypercent + "<br> Probability it is healthy = " + healthypercent;
+		resultText.innerHTML = "Probability it is depression =" + depressionpercent + "<br> Probability it is anxiety =" + anxietypercent;
 		
 	}
 
