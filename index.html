@@ -49,15 +49,11 @@ blah, blah, blah, blah
 	
 	function anxietyFinal(){ <!--Added this command to calculate the results--> 
 		anxiety_count = anxiety_count * 1/8; 
-	
-	}
-	
-	function depressionFinal(){ <!--Added this command to calculate the results--> 
 		depression_count = depression_count * 1/8;
 		
 	}
 	
-	function Resultsprobability(){ <!--Added this command to display the results breakdown--> 
+	function Resultspercentage(){ <!--Added this command to display the results breakdown--> 
 		var resultText = document.getElementById("results");
 		var depressionpercent= (depression_count)
 		var anxiety= (anxiety_count)
@@ -214,7 +210,7 @@ img, object{
 	
 	<div id="content" class="w3-container">
 	<p>Click below for your results:</p> <!--Added a subtitle to direct the user to their results--> 
-		<a href="#ten" onclick="Resultsprobability();"class="w3-btn w3-black"> Results </a> <!--Added the command for a Results button that will take the user to their survey results-->
+		<a href="#ten" onclick="Resultspercentage();"class="w3-btn w3-black"> Results </a> <!--Added the command for a Results button that will take the user to their survey results-->
 	
 	</div>
 </div>
