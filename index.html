@@ -33,29 +33,29 @@ blah, blah, blah, blah
 
 
 <script>
-        var allergy_count = 0;
-        var cold_count = 0;
+        var anxiety_count = 0;
+        var depression_count = 0;
 
 	
-        function allergyAdd(){
-            allergy_count = allergy_count + 1;
+        function anxietyAdd(){
+            anxiety_count = anxiety_count + 1;
 
         }
 
-        function coldAdd(){
-            cold_count = cold_count + 1;
+        function depressionAdd(){
+            depression_count = depression_count + 1;
         }
 	
-	function allergyFinal(){ <!--Added this command to calculate the results--> 
-		allergy_count = allergy_count * 1/4; 
-		cold_count = cold_count * 1/4;
+	function anxietyFinal(){ <!--Added this command to calculate the results--> 
+		anxiety_count = anxiety_count * 1/4; 
+		depression_count = depression_count * 1/4;
 	}
 	
 	function Resultspercentage(){ <!--Added this command to display the results breakdown by percentage--> 
 		var resultText = document.getElementById("results");
-		var coldpercent= (cold_count)
-		var allergypercent= (allergy_count)
-		resultText.innerHTML = "Probability it is cold =" + coldpercent + "<br> Probability it is allergies =" + allergypercent;
+		var depressionpercent= (depression_count)
+		var anxiety= (anxiety_count)
+		resultText.innerHTML = "Probability it is depression =" + depressionpercent + "<br> Probability it is anxiety =" + anxietypercent;
 		
 	}
 
